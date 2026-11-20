@@ -97,11 +97,12 @@
     <p>Where the law requires it (for example in the European Economic Area, the United Kingdom and Switzerland), the game shows a consent form from Google’s User Messaging Platform. There you can accept or refuse personalised advertising and the related uses of data. Your choice is stored on your device.</p>
     <h3>What AdMob may collect</h3>
     <p>To show, measure and, if you consent, personalise ads, and to prevent fraud, AdMob may collect your device’s advertising ID, your IP address, information about your device and the app (such as the model, Android version and language), and how you interact with ads. If you refuse consent, Google may still show non-personalised or limited ads, which use less data.</p>
+    <p>On devices that support them, AdMob may also use Android’s Privacy Sandbox ad APIs: an ad ID provided by Android, ad measurement (attribution), and Topics, which Android works out on your device from the apps you use and shares as a few broad interest categories. You can turn these features off in your Android settings (Settings › Privacy › Ads).</p>
     <p>Google explains how it uses this data in <a href="https://policies.google.com/technologies/partner-sites">How Google uses information from sites or apps that use our services</a> and in its <a href="https://policies.google.com/privacy">Privacy Policy</a>.</p>
     <h3>Your choices</h3>
     <ul>
       <li>You never have to watch an ad.</li>
-      <li>You can reset or delete your advertising ID in your Android settings (usually under Privacy › Ads, depending on your device).</li>
+      <li>You can reset or delete your advertising ID, and turn off the Privacy Sandbox ad features, in your Android settings (usually under Settings › Privacy › Ads, depending on your device).</li>
       <li>You can manage how Google personalises ads in <a href="https://myadcenter.google.com/">My Ad Center</a>.</li>
       <li>To change your consent choice, clear the game’s data (see <a href="#delete-data">Deleting your data</a>). The consent form then appears again the next time you start the game.</li>
     </ul>
@@ -123,11 +124,14 @@
     <ul>
       <li>It has no account of its own and no server of its own, and it sends no data to Valone IT.</li>
       <li>It contains no analytics and no crash reporting, and no SDKs other than the four Google SDKs above. The game is built with Kivy (Python), which sends no telemetry.</li>
-      <li>It does not access your contacts, photos, files, precise location, camera or microphone. It asks for only three Android permissions:
+      <li>It requests the Android permissions below. Google’s SDKs add most of them. The game itself uses none of them to access personal data: it does not access your contacts, photos, files, location, camera or microphone.
         <ul>
-          <li><code>INTERNET</code>, for ads, Play Games and purchases;</li>
-          <li><code>VIBRATE</code>, for haptic feedback;</li>
-          <li><code>AD_ID</code>, which the AdMob SDK adds so that it can read the advertising ID.</li>
+          <li><code>INTERNET</code> and <code>ACCESS_NETWORK_STATE</code>: ads, Play Games and purchases, and checking the connection;</li>
+          <li><code>VIBRATE</code>: haptic feedback;</li>
+          <li><code>com.google.android.gms.permission.AD_ID</code>: lets AdMob read the advertising ID;</li>
+          <li><code>ACCESS_ADSERVICES_AD_ID</code>, <code>ACCESS_ADSERVICES_ATTRIBUTION</code> and <code>ACCESS_ADSERVICES_TOPICS</code>: added by AdMob for Android’s Privacy Sandbox ad APIs (the ad ID, ad measurement and Topics, see <a href="#ads">section 4</a>), which you can turn off in Settings › Privacy › Ads;</li>
+          <li><code>com.android.vending.BILLING</code>: in-app purchases through Google Play;</li>
+          <li><code>WAKE_LOCK</code> and <code>FOREGROUND_SERVICE</code>: added by Google’s SDKs for their background work.</li>
         </ul>
       </li>
       <li>We do not sell your data, and we do not share it with anyone other than the Google services described above.</li>

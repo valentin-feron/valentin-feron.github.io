@@ -97,11 +97,12 @@
     <p>Lorsque la loi l’exige (par exemple dans l’Espace économique européen, au Royaume-Uni et en Suisse), le jeu affiche un formulaire de consentement fourni par la User Messaging Platform de Google. Vous pouvez y accepter ou refuser la publicité personnalisée et les usages de données associés. Votre choix est enregistré sur votre appareil.</p>
     <h3>Ce qu’AdMob peut collecter</h3>
     <p>Pour diffuser et mesurer les publicités, les personnaliser si vous y consentez, et lutter contre la fraude, AdMob peut collecter l’identifiant publicitaire de votre appareil, votre adresse IP, des informations sur votre appareil et l’application (modèle, version d’Android, langue…), et vos interactions avec les publicités. Si vous refusez, Google peut quand même afficher des publicités non personnalisées ou limitées, qui utilisent moins de données.</p>
+    <p>Sur les appareils compatibles, AdMob peut aussi utiliser les API publicitaires de la Privacy Sandbox d’Android : un identifiant publicitaire fourni par Android, la mesure des annonces (attribution), et Topics, qui déduit sur votre appareil, à partir des applications que vous utilisez, quelques grands centres d’intérêt partagés avec les annonceurs. Vous pouvez désactiver ces fonctions dans les paramètres Android (Paramètres › Confidentialité › Annonces).</p>
     <p>Google explique l’usage qu’il fait de ces données dans <a href="https://policies.google.com/technologies/partner-sites?hl=fr">Comment Google utilise les informations des sites ou applications qui utilisent ses services</a> et dans ses <a href="https://policies.google.com/privacy?hl=fr">Règles de confidentialité</a>.</p>
     <h3>Vos choix</h3>
     <ul>
       <li>Vous n’êtes jamais obligé de regarder une publicité.</li>
-      <li>Vous pouvez réinitialiser ou supprimer votre identifiant publicitaire dans les paramètres Android (en général dans Confidentialité › Annonces, selon votre appareil).</li>
+      <li>Vous pouvez réinitialiser ou supprimer votre identifiant publicitaire, et désactiver les fonctions publicitaires de la Privacy Sandbox, dans les paramètres Android (en général dans Paramètres › Confidentialité › Annonces, selon votre appareil).</li>
       <li>Vous pouvez gérer la personnalisation des annonces Google dans <a href="https://myadcenter.google.com/?hl=fr">Mon Centre d’annonces</a>.</li>
       <li>Pour modifier votre choix de consentement, effacez les données du jeu (voir <a href="#delete-data">Supprimer vos données</a>). Le formulaire de consentement s’affichera de nouveau au prochain lancement.</li>
     </ul>
@@ -123,11 +124,14 @@
     <ul>
       <li>Il n’a ni compte propre ni serveur propre, et n’envoie aucune donnée à Valone IT.</li>
       <li>Il ne contient ni outil de mesure d’audience, ni rapport de plantage, ni aucun autre SDK que les quatre SDK Google ci-dessus. Le jeu est développé avec Kivy (Python), qui n’envoie aucune télémétrie.</li>
-      <li>Il n’accède ni à vos contacts, ni à vos photos, ni à vos fichiers, ni à votre position précise, ni à l’appareil photo, ni au micro. Il ne demande que trois autorisations Android :
+      <li>Il demande les autorisations Android ci-dessous, dont la plupart sont ajoutées par les SDK de Google. Le jeu lui-même n’en utilise aucune pour accéder à des données personnelles : il n’accède ni à vos contacts, ni à vos photos, ni à vos fichiers, ni à votre position, ni à l’appareil photo, ni au micro.
         <ul>
-          <li><code>INTERNET</code>, pour les publicités, Play Jeux et les achats ;</li>
-          <li><code>VIBRATE</code>, pour le retour haptique (vibrations) ;</li>
-          <li><code>AD_ID</code>, ajoutée par le SDK AdMob pour lire l’identifiant publicitaire.</li>
+          <li><code>INTERNET</code> et <code>ACCESS_NETWORK_STATE</code> : publicités, Play Jeux et achats, et vérification de la connexion ;</li>
+          <li><code>VIBRATE</code> : retour haptique (vibrations) ;</li>
+          <li><code>com.google.android.gms.permission.AD_ID</code> : permet à AdMob de lire l’identifiant publicitaire ;</li>
+          <li><code>ACCESS_ADSERVICES_AD_ID</code>, <code>ACCESS_ADSERVICES_ATTRIBUTION</code> et <code>ACCESS_ADSERVICES_TOPICS</code> : ajoutées par AdMob pour les API publicitaires de la Privacy Sandbox d’Android (identifiant publicitaire, mesure des annonces et Topics, voir la <a href="#ads">section 4</a>), que vous pouvez désactiver dans Paramètres › Confidentialité › Annonces ;</li>
+          <li><code>com.android.vending.BILLING</code> : achats intégrés via Google Play ;</li>
+          <li><code>WAKE_LOCK</code> et <code>FOREGROUND_SERVICE</code> : ajoutées par les SDK de Google pour leurs tâches en arrière-plan.</li>
         </ul>
       </li>
       <li>Nous ne vendons pas vos données et ne les partageons avec personne d’autre que les services Google décrits ci-dessus.</li>
