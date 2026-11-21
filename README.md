@@ -16,7 +16,6 @@ Plain HTML and one stylesheet: no build step, no JavaScript, no external resourc
 
 ## To do
 
-- `app-ads.txt`: replace `pub-XXXXXXXXXXXXXXXX` with the real AdMob publisher ID.
 - `index.html`, `fr/index.html`: replace the "Coming soon" badge with the Play Store link (see the HTML comment).
 - Privacy policy: update the "last updated" date in both languages whenever it changes.
 
