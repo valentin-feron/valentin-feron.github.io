@@ -6,7 +6,7 @@ Plain HTML and one stylesheet: no build step, no JavaScript, no external resourc
 | Path | Page |
 | --- | --- |
 | `/` · `/fr/` | Home |
-| `/boom-and-banner/privacy/` · `/fr/boom-and-banner/privacy/` | Boom & Banner privacy policy (data deletion: `#delete-data`) |
+| `/boom-and-banner/privacy/` · `/fr/boom-and-banner/privacy/` · `/es/boom-and-banner/privacy/` | Boom & Banner privacy policy (data deletion: `#delete-data`) |
 | `/caravan-and-crown/privacy/` · `/fr/caravan-and-crown/privacy/` | Redirects to the policy above (the game's former name) |
 | `/legal-notice/` · `/fr/mentions-legales/` | Legal notice / mentions légales |
 | `/app-ads.txt` | AdMob authorized sellers |
@@ -17,7 +17,7 @@ Plain HTML and one stylesheet: no build step, no JavaScript, no external resourc
 ## To do
 
 - `index.html`, `fr/index.html`: replace the "Coming soon" badge with the Play Store link (see the HTML comment).
-- Privacy policy: update the "last updated" date in both languages whenever it changes.
+- Privacy policy: update the "last updated" date in all three languages whenever it changes.
 
 ## Preview locally
 
