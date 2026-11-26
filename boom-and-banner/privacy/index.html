@@ -29,7 +29,7 @@
 
 <main id="main" class="wrap">
   <h1>Boom &amp; Banner privacy policy</h1>
-  <p class="meta">Last updated: <time datetime="2026-11-25">25 November 2026</time></p>
+  <p class="meta">Last updated: <time datetime="2026-11-26">26 November 2026</time></p>
 
   <p>This policy explains what data the Android game Boom &amp; Banner (package name <code>com.valoneit.boomandbanner</code>) uses, why it uses it, and what choices you have.</p>
 
@@ -39,7 +39,7 @@
       <li>The game has no account of its own. Your progress is saved on your device and, if you use Google Play Games, in your Play Games account.</li>
       <li>The only ads are rewarded ads that you choose to watch. Where the law requires it, you are asked for consent first. Google’s ads SDK automatically collects some data, such as your IP address (which gives an approximate location), device identifiers and how you use the game, and shares it with Google, even if you watch no ad.</li>
       <li>Google Play handles payments. We never see your payment details.</li>
-      <li>To balance the game, we collect gameplay data and crash traces ourselves, under a random identifier, without your name or any account. They are stored in the European Union for 12 months. You can turn this off and delete the data in the game’s Settings.</li>
+      <li>To balance the game, we collect gameplay data and crash traces ourselves, but only if you agree: the game asks you once. They are sent under a random identifier, without your name or any account, and stored in the European Union for 12 months. You can change your mind and delete the data in the game’s Settings.</li>
       <li>No analytics or crash-reporting SDK. We do not sell your data or share it with anyone else. All data is encrypted in transit.</li>
     </ul>
   </div>
@@ -83,8 +83,9 @@
       <li>your choice about sharing gameplay data, the random identifier used for it and the number of times you have played (see <a href="#gameplay-data">section 7</a>);</li>
       <li>records of your in-app purchases: which packs, passes and first-time offers you have bought, and the tokens of your last few purchases that were already delivered. The game uses the tokens only to avoid delivering the same purchase twice.</li>
     </ul>
-    <p>Beside the save, the game keeps a log of how the legs of your stages went (such as times, losses, powers used and what you brought), and any gameplay data waiting to be sent. These files are not part of the cloud save. While sharing is on, what the log records is also sent to us as gameplay data (see <a href="#gameplay-data">section 7</a>).</p>
+    <p>Beside the save, the game keeps a log of how the legs of your stages went (such as times, losses, powers used and what you brought), and gameplay data waiting for your answer or waiting to be sent. These files are not part of the cloud save. If you agree to share gameplay data, what the log records is also sent to us (see <a href="#gameplay-data">section 7</a>).</p>
     <p>The save does not contain your name, email address, contacts, location or payment details. The save itself is never sent to us. <a href="#gameplay-data">Section 7</a> describes the gameplay data that is.</p>
+    <p>If Android’s backup is turned on on your device, Android includes your save file, and nothing else from the game, in your device’s backup in your Google account, and when you move to a new device. The stage log and the gameplay data waiting on your phone are never part of it. You manage this backup in your Android settings (usually Settings › Google › Backup).</p>
   </section>
 
   <section id="play-games">
@@ -101,7 +102,7 @@
     <h2>4. Rewarded ads (Google AdMob)</h2>
     <p>The game shows only <strong>rewarded ads</strong>, through Google AdMob. An ad plays only when you choose to watch one to earn an in-game reward. There are no banners and no ads that interrupt play.</p>
     <h3>Consent</h3>
-    <p>Where the law requires it (for example in the European Economic Area, the United Kingdom and Switzerland), the game shows a consent form from Google’s User Messaging Platform. There you can accept or refuse personalised advertising and the related uses of data. Your choice is stored on your device.</p>
+    <p>Where the law requires it (for example in the European Economic Area, the United Kingdom and Switzerland), the game shows a consent form from Google’s User Messaging Platform. There you can accept or refuse the storing and reading of information on your device for advertising, personalised advertising and the related uses of data. Your choice is stored on your device.</p>
     <h3>What AdMob collects</h3>
     <p>AdMob’s SDK automatically collects the data below and shares it with Google, from the moment it starts and even if you never watch an ad. Google uses it to show, measure and, if you consent, personalise ads, for analytics, and to prevent fraud:</p>
     <ul>
@@ -110,7 +111,7 @@
       <li><strong>Identifiers</strong>: your device’s advertising ID, its app set ID and, where applicable, other identifiers linked to accounts signed in on the device.</li>
       <li><strong>Diagnostics</strong>: the performance of the app and the SDK (such as launch time, freezes and energy use), and information about your device and the app (such as the model, Android version and language).</li>
     </ul>
-    <p>If you refuse consent, Google may still show non-personalised or limited ads, which use less data.</p>
+    <p>If you accept storage on your device but refuse personalisation, Google shows non-personalised ads. If you refuse everything, Google shows only limited ads, which do not use identifiers stored on your device. Fewer ads may then be available.</p>
     <p>On devices that support them, AdMob may also use Android’s Privacy Sandbox ad APIs: an ad ID provided by Android, ad measurement (attribution), and Topics, which Android works out on your device from the apps you use and shares as a few broad interest categories. You can turn these features off in your Android settings (Settings › Privacy › Ads).</p>
     <p>Google explains how it uses this data in <a href="https://policies.google.com/technologies/partner-sites">How Google uses information from sites or apps that use our services</a> and in its <a href="https://policies.google.com/privacy">Privacy Policy</a>.</p>
     <h3>Your choices</h3>
@@ -136,7 +137,7 @@
 
   <section id="gameplay-data">
     <h2>7. Gameplay data we collect ourselves</h2>
-    <p>The game sends gameplay data to a server we run, so that we can balance its difficulty and economy. This is separate from Google’s SDKs: the game does it itself, with no analytics SDK. We do not sell this data, share it with other companies or use it for advertising.</p>
+    <p>If you agree, the game sends gameplay data to a server we run, so that we can balance its difficulty and economy. This is separate from Google’s SDKs: the game does it itself, with no analytics SDK. We do not sell this data, share it with other companies or use it for advertising.</p>
     <h3>What we collect</h3>
     <ul>
       <li><strong>A random identifier</strong>, created on your device. It is not your advertising ID or your Google or Play Games account, and it carries no name or email address. It is kept in your save (see <a href="#device">section 2</a>), so it follows you to a new phone if you use the cloud save. Once the game has sent data, and while sharing is on, the Settings screen shows it in shortened form (<strong>Your player ID</strong>).</li>
@@ -148,15 +149,17 @@
     </ul>
     <p>We do not collect your name, email address, account, advertising ID, location or contacts, or anything you type. Our server does not store your IP address with the data. Cloudflare, which hosts the server, processes your IP address to deliver the request, as any web host does.</p>
     <h3>Why, and on what basis</h3>
-    <p>We use this data to analyse how the game is played, so that we can balance and improve it, on the basis of our legitimate interest in doing so (see <a href="#legal-bases">Legal bases</a>). The data is pseudonymous: it does not say who you are, but it is still personal data.</p>
+    <p>We use this data to analyse how the game is played, so that we can balance and improve it, on the basis of your consent (see <a href="#legal-bases">Legal bases</a>). The data is pseudonymous: it does not say who you are, but it is still personal data.</p>
     <h3>Where it is kept, and for how long</h3>
     <p>The data is sent over HTTPS to our server on Cloudflare (Workers and R2 storage), which acts as our processor. It is stored in a storage bucket restricted to the European Union, kept for 12 months from the day each batch of data arrives, and then deleted automatically. We also keep working copies on our own computers to analyse the data. They are deleted at the next sync after the server deletes the data, and in any case after 12 months.</p>
     <h3>Your choices</h3>
     <ul>
-      <li>Sharing is on by default. To turn it off, tap <strong>Play data: shared</strong> at the bottom of the game’s Settings screen.</li>
+      <li>The game asks you once, when you come back to the map after a stage: <strong>Share</strong> or <strong>No thanks</strong>. Nothing is sent before you answer. Until then, the gameplay data is only recorded on your phone.</li>
+      <li>If you tap <strong>Share</strong>, the game sends the data, including what it recorded since you first opened the game. If you tap <strong>No thanks</strong>, it deletes what it recorded and records nothing more.</li>
+      <li>You can change your answer at any time: tap <strong>Play data: shared</strong> (or <strong>Play data: not shared</strong>) at the bottom of the game’s Settings screen.</li>
       <li>Turning it off stops all sending, drops the data still waiting on your phone, and asks our server to delete everything stored under your identifier. The game sends this request as soon as possible, and again each time it goes to the background, until our server confirms it.</li>
       <li>Our server then refuses any new data under that identifier. If another device still uses it, or an Android backup restores a save that contains it, the game turns sharing off there the next time it sends data. To do this, we keep only a cryptographic hash (SHA-256) of the deleted identifier, for 12 months.</li>
-      <li>Loading a cloud save never turns sharing back on. If sharing is off on your phone or in the save you load, it stays off, and the data under the identifiers of both is deleted from our server. If sharing is on in both but the identifiers differ, the save’s identifier is kept and the data under the phone’s is deleted.</li>
+      <li>Loading a cloud save never turns sharing back on. If sharing is off on your phone or in the save you load, it stays off, and the data under the identifiers of both is deleted from our server. If sharing is on in both but the identifiers differ, the save’s identifier is kept and the data under the phone’s is deleted. If you have answered in the save you load but not yet on your phone, or the reverse, that answer applies.</li>
       <li>If you turn it back on, the game creates a new identifier. The old data stays deleted.</li>
       <li>You can also write to <a href="mailto:contact@valone-it.fr">contact@valone-it.fr</a> to ask for access to your data or for its deletion. We need your identifier to find your data: in the game’s Settings, tap <strong>Copy</strong> next to <strong>Your player ID</strong> and paste it into your email. Do this before you turn sharing off, because the game then stops showing it. To delete your data, the switch in the game is the simplest way.</li>
     </ul>
@@ -187,7 +190,7 @@
     <ul>
       <li>saving your progress, Play Games sign-in and cloud saves, and delivering your purchases are needed to provide the game you chose to play (Article 6(1)(b));</li>
       <li>personalised ads, and storing or reading information on your device for advertising, are based on your consent where the law requires it (Article 6(1)(a), and Article 82 of the French Data Protection Act);</li>
-      <li>collecting gameplay data is based on our legitimate interest in balancing and improving the game (Article 6(1)(f)). You can object at any time by turning sharing off (see <a href="#gameplay-data">section 7</a>);</li>
+      <li>collecting gameplay data is based on your consent (Article 6(1)(a), and Article 82 of the French Data Protection Act for the information read from your device). You can withdraw it at any time by turning sharing off (see <a href="#gameplay-data">section 7</a>);</li>
       <li>showing and measuring non-personalised or limited ads, the related analytics and fraud prevention are based on our legitimate interest in funding the game and protecting it against fraud (Article 6(1)(f)). Storing or reading information on your device for advertising remains subject to your consent where the law requires it;</li>
       <li>answering your emails is based on our legitimate interest in replying to you (Article 6(1)(f)).</li>
     </ul>
@@ -219,13 +222,13 @@
 
   <section id="rights">
     <h2>12. Your rights</h2>
-    <p>Under the GDPR you have the right to access your personal data, to have it corrected, to have it deleted, and to object to its use. You also have the right to restrict its use, to data portability, and to withdraw your consent at any time (for ads, from Settings › Privacy options in the game). To use these rights, email <a href="mailto:contact@valone-it.fr">contact@valone-it.fr</a>. We may ask you for information to confirm your request is yours. Most of the data is stored on your device or in your Google account, so we may point you to the right Google setting. For data that Google holds as a controller, you can also contact Google directly.</p>
+    <p>Under the GDPR you have the right to access your personal data, to have it corrected, to have it deleted, and to object to its use. You also have the right to restrict its use, to data portability, and to withdraw your consent at any time (for ads, from Settings › Privacy options in the game; for gameplay data, with the Play data switch on the same screen). To use these rights, email <a href="mailto:contact@valone-it.fr">contact@valone-it.fr</a>. We may ask you for information to confirm your request is yours. Most of the data is stored on your device or in your Google account, so we may point you to the right Google setting. For data that Google holds as a controller, you can also contact Google directly.</p>
     <p>If you think your rights have not been respected, you can complain to the French data protection authority, the <a href="https://www.cnil.fr/fr/plaintes">CNIL</a> (3 Place de Fontenoy, TSA 80715, 75334 Paris Cedex 07, France), or to the data protection authority of the country where you live.</p>
   </section>
 
   <section id="children">
     <h2>13. Children</h2>
-    <p>Boom &amp; Banner is not designed for children and is not directed at children under 13. We do not knowingly collect personal data from children. If you are under the age at which you can consent on your own in your country (15 in France), ask a parent or guardian before accepting personalised ads. If you think a child has sent us personal data, contact us and we will delete it.</p>
+    <p>Boom &amp; Banner is not designed for children and is not directed at children under 13. We do not knowingly collect personal data from children. If you are under the age at which you can consent on your own in your country (15 in France), ask a parent or guardian before accepting personalised ads or sharing gameplay data. If you think a child has sent us personal data, contact us and we will delete it.</p>
   </section>
 
   <section id="transfers">
